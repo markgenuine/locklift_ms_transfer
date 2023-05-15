@@ -2,7 +2,7 @@
 Transfers from multis wallet used locklift.
 
 1. Registered http://evercloud.dev. Add Project->Entered project name. Copy https://mainnet.evercloud.dev/%%%token%%%/graphql.
-In %%%token%%% yours token for access.
+In ```%%%token%%%``` yours token for access.
 2. export TESTNET_GQL_ENDPOINT=https://mainnet.evercloud.dev/%%%token%%%/graphql
 3. Install if not have npm and make ```npm i```.
 4. Edit file data_example.json
