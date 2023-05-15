@@ -1,0 +1,7 @@
+node_modules/
+.idea/
+/data.json
+/.env
+
+# Ignore Mac files
+.DS_Store

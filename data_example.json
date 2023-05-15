@@ -1,0 +1,76 @@
+{
+  "msigs": [
+    {
+      "address": "msig_address1",
+      "minimum_balance": 10,
+      "minimum_reserve": 3,
+      "signers": [
+        {
+          "id": 50,
+          "public": "signer_pk_1",
+          "secret": "signer_sk_1"
+        },
+        {
+          "id": 51,
+          "public": "signer_pk_2",
+          "secret": "signer_sk_1"
+        },
+        {
+          "id": 52,
+          "public": "signer_pk_3",
+          "secret": "signer_sk_1"
+        }
+      ],
+      "receivers": [
+        {
+          "address": "receiver_1",
+          "proc": 25
+        },
+        {
+          "address": "receiver_2",
+          "proc": 25
+        },
+        {
+          "address": "receiver_3",
+          "proc": 50
+        }
+      ]
+    },
+    {
+      "address": "msig_address1",
+      "minimum_balance": 10,
+      "minimum_reserve": 3,
+      "signers": [
+        {
+          "id": 50,
+          "public": "signer_pk_1",
+          "secret": "signer_sk_1"
+        },
+        {
+          "id": 51,
+          "public": "signer_pk_2",
+          "secret": "signer_sk_2"
+        },
+        {
+          "id": 52,
+          "public": "signer_pk_3",
+          "secret": "signer_sk_3"
+        }
+      ],
+      "receivers": [
+        {
+          "address": "receiver_1",
+          "proc": 25
+        },
+        {
+          "address": "receiver_2",
+          "proc": 25
+        },
+        {
+          "address": "receiver_3",
+          "proc": 50
+        }
+      ]
+    }
+  ]
+}
