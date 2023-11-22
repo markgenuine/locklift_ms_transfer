@@ -25,19 +25,13 @@ const config: LockliftConfig = {
     version: "0.62.0",
 
     // Specify config for extarnal contracts as in exapmple
-    externalContracts: {
+    externalContractsArtifacts: {
       'precompiled': [
           'SafeMultisigWallet'
       ],
-    //   "node_modules/broxus-ton-tokens-contracts/build": ['TokenRoot', 'TokenWallet']
     }
   },
   linker: {
-    // Specify path to your stdlib
-    // lib: "/mnt/o/projects/broxus/TON-Solidity-Compiler/lib/stdlib_sol.tvm",
-    // // Specify path to your Linker
-    // path: "/mnt/o/projects/broxus/TVM-linker/target/release/tvm_linker",
-
     // Or specify version of linker
     version: "0.15.48",
   },
@@ -83,7 +77,7 @@ const config: LockliftConfig = {
       },
       giver: {
         address: "0:0000000000000000000000000000000000000000000000000000000000000000",
-        key: "secret key",
+        key: "secretkey",
       },
       tracing: {
         endpoint: DEV_NET_NETWORK_ENDPOINT,
@@ -124,7 +118,7 @@ const config: LockliftConfig = {
       giver: {
         // Mainnet giver has the same abi as testnet one
         giverFactory: (ever, keyPair, address) => new GiverWallet(ever, keyPair, address),
-        address: process.env.MAIN_GIVER_ADDRESS ?? "",
+        address: process.env.MAIN_GIVER_ADDRESS ?? "0:0000000000000000000000000000000000000000000000000000000000000000",
         phrase: process.env.MAIN_GIVER_SEED ?? "",
         accountId: 0
       },
